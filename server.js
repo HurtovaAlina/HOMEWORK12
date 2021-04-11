@@ -4,7 +4,7 @@ const file = new static.Server('.');
 
 function accept(request, response) {
 
-  if (request.url == '/vote.txt') { 
+  if (request.url == '/vote') { 
     setTimeout(function() {
       response.end('Your vote is accepted: ' + new Date());
     }, 2000);
